@@ -1,0 +1,11 @@
+drei schritte zum aktualisieren :
+
+1. Sicherstellen, dass sie in der Basis des verwalteten verzeichnisses sind. (/home/pan/Dokumente/KOA)   ( falls du doof bist das geht mit cd dokumente cd koa usw)
+
+2.git add .-A    <---- . steht für das aktuelle verzeichnis
+								 <---- -A steht fr alle geänderten, hinzugefügten, gelöschten dateien
+
+3. git commit -am 'was passiert ist'    <---- bestätigung der änderung lokal
+
+4. git push origin master								<---- hochladen der neuen version auf 	
+																							server
