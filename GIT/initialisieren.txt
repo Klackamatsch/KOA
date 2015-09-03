@@ -12,4 +12,5 @@ git commit -m 'initialisierung'
 											  <--- die neue datei wird in den Bereich der Dateien geschoben, die mit dem Server synchonisiert werden sollen.
 git remote add origin https://github.com/Klackamatsch/KOA.git
 												<---das lokale repository wird mit einem öffentlichen repository verbunden; es wird dem bestehenden github-repository hinzugefügt
-												git push -u origin master<--- die änderungren, die auf dem lokalen repository durchgeführt wurden, werden mit dem stand auf dem server verglichen und der server wird mit der neuesten version gefüttert
+git push -u origin master<--- die änderungren, die auf dem lokalen repository 													durchgeführt wurden, werden mit dem stand auf dem 		
+												server verglichen und der server wird mit der neuesten version gefüttert
