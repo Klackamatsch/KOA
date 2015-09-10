@@ -6,5 +6,6 @@ ls
 
 cp
 
-rm 
+rm  		<---- löscht datein und verzeichnisse 
+rm -rf <--- r =rekursiv: von hier an alle 							verzeichnisse  f= force alles wird ohne 				nachfrage gelöscht
 
