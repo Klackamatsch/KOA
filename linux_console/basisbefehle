@@ -1,10 +1,43 @@
-cd 
+cd				<---- ermöglicht das navigieren in der Ordnerstruktur		
+cd ..			<.... springt eine einzige Ebene zurück anstatt alle
+cd ~     	<-------das ding heißt Tilde und ist ne abkürzung für /home/pan
+cd Dokumente  <---- relativer Pfad: vom aktuellen Standort aus
+cd /home/pan/Dokumente <------ absoluter Pfad: von der wurzel  / ( mit dem slash allein kommt man zur 
+																	ordnerwurzel )
 
-mkdir
 
-ls
+mkdir    <------ erzeugt einen Ordner/Verzeichnis ( mkdir hallo...... erzeugt einen ordner namens hallo 									im aktuellem ordner)
+mkdir /home/pan/Dokumente/hallo2  <----- erzeugt einen ordner mit absoluter pfadangabe
 
-cp
+touch datei_name  <--- erstellt im aktuellen verzeichnis eine Datei (textdatei)
+
+
+ls   <---- erzeugt eine verzeichnisausgabe 
+ls -l <----- steht für long und macht das in eine liste abwärts
+ls -la <----- zeigt auch versteckte datein
+ls -lt <----- sortiert nach änderungsdatum
+		-lat <--------
+		-a steht für alles. also auch versteckte dateien
+		-l steht für long also viel Info
+		-t steht für sortiert nacht zeit, jüngstes datum steht oben
+
+cp    
+				cp quelle ziel 
+				cp datei02 datei04
+				<---- die existierende datei wird als datei 04 im aktuellen verzeichnis neu erzeugt oder überschrieben
+				cp datei 03 ~/Dokumente/datei03
+				<---- die datei wird ins verzeichnis Dokumente kopiert
+
+cp -r verzeichnis01 verzeichnis02
+		<---------- beim kopieren von verzeichnissen muss der schalter -r angegeben werden damit die inhalte des verzeichnisses mit kopiert werden. hier wird nun verz01 kopiert und als verz02 genannt eingefügt
+cp *.txt unterverzeichnis/   <---- kopiert alle datein mit der endung .txt in das ziel (unterverzeichnis) der asterisk (*) steht für beliebig viele zeichen
+
+less 
+		less datei_name  <.... zeigt die datei datei_name seitenweise an. weiterblättern mit der leertaste . beenden mit q
+
+mv quelle ziel
+ 			<----- der befehl wird zum umbenennen und zum verschieben von dateien und ordern benutzt		
+
 
 rm  		<---- löscht datein und verzeichnisse 
 rm -rf <--- r =rekursiv: von hier an alle 							verzeichnisse  f= force alles wird ohne 				nachfrage gelöscht

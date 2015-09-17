@@ -1,0 +1,15 @@
+    ***********    |    **************
+
+ls -l /etc | less
+	durch das | Zeichen wird das Ergebnis (die Ausgabe) des Befehls ls .....
+	weiter geleitet in den Befehl less.
+	Dadurch kann ich eine Seitenweise Anzeige desr Dateien und Ordner erzwingen
+
+
+	>
+	ls -l /etc > dateiname           <----durch das Größer als Zeichen wird die Ausgabe in eine Datei 																						umgeleitet. Falls die Datei bereits existiert, wird sie 																								Überschrieben. ansosnten neu erzeugt.
+
+	>>  der Inhalt 
+
+	ls -l /etc >>Dateiname           <----- der Dateiinhalt wird nciht überschrieben, sondern es wir 																								dangehängt
+	

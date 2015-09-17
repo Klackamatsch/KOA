@@ -1,0 +1,39 @@
+******** Befehle zum Eingabemodus********
+
+i     <----- Einfügen vor der aktuellen curserposition
+a     <----- Einfügen nach der Curserposition
+I     <----- anfang der Zeile
+A     <..... Ende der Zeile
+
+
+
+*********Löschbefehle******************
+
+dd    <----- löscht ganze Zeile
+x     <----- löscht buchstabe unter curser
+
+p     <----- fügt Puffer nach aktuellen Position ein
+u     <----- macht letzten Befehl Rückgängig
+
+
+
+
+********* Speicherbefehle***************
+
+:wq   <----- Speichert die Änderungen
+:q!   <----- Verlassen ohne Speichern und Nachfrage
+
+
+********Suchen************+
+
+/hallo
+n    <----- sucht weiter
+N    <----- sucht zurück
+
+gg   <----- springt zum Anfang
+G    <----- Springt zum Ende
+400G <----- springt zur zeile 400
+
+
+
+
