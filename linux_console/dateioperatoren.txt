@@ -1,0 +1,28 @@
+less 
+
+		less datei_name
+		#zeigt die datei datei_name seitenweise an
+		#weiterblättern mit der leertaste
+		#beenden mit q
+
+ln 
+		
+		ln quelle ziel
+		# es wird mit demBefehl ln ein Link auf eine Datei erzeigt.
+		damit wird in dem inode Table der festplatte ein verweis
+		zwixchen dem namen <ziel> und der schon existierenden <quelle>
+		erzeugt.
+		#wird die datei >zeil> geändert, ändert sich somit auch die datei <quelle>
+		#hardlink
+		#wird benötigt bei der installation von komplexen programmen. 
+		es wird dann ein verzeichnis auf die programme im system erstellt, die das zu 
+		erstellende programm benötigt.
+
+
+
+ln -s quelle ziel
+	
+		#symbolischer link
+		# ein verzeichnis oder eine quelle außerhalb der festplatte können
+		so integriert werden
+

@@ -1,0 +1,17 @@
+grep
+
+	#mit hilfe dieses befehls wrden bestimmte suchmuster in dateien oder der Standardausgabe gefunden
+	Beispiel:
+
+			lspci | grep VGA
+		#von der Ausgabe der Hardwarekonfiguration lspci wird nach dem suchmuster VGA gesucht.
+		
+
+			grep pan /etc/passwd
+				#in der Datei /etc/passwd wird nach dem Suchmuster: pna gesucht.
+
+			grep '^[AS]' daten.txt
+			#sucht am anfang der zeile (^)nach großem S oder A in der datei daten.txt	
+
+			grep '\<coleman\>' daten.txt 
+			# sucht nach dem ganzen wort in der genannten datei

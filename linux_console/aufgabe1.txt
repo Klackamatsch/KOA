@@ -1,0 +1,59 @@
+Benutzen Sie die Consolenhilfe man find.
+
+a. suchen Sie in den Verzeichnissen /bin und /usr alle Dateien, deren Name mit pdf endet
+
+find . -iname "*pdf"
+
+b. suchen Sie alle Dateien, von ihrem Home-Verzeichnis ausgehend, die groesser als 1 MB sind
+
+find /home -size +1000k
+
+c. suchen Sie alle Dateien, von Ihrem Home-Verzeichnis ausgehend, die seit 30 Tagen nicht mehr verändert wurden
+
+d. suchen Sie alle Dateien in dem zur Übung angelegten Verzeichnis, die mit a beginnen und dann ein r oder n als 2. Buchstaben haben
+
+find . -iname "a[n,r]*"
+
+e. suchen Sie von /home ausgehend alle Dateien des Users als der Sie angemeldet sind
+
+
+find ~ -user pan
+
+
+f. suchen Sie alle Dateien vom Typ link in dem zur Übung angelegten Verzeichnis
+
+find ~ -type l
+
+g. lassen Sie find alle Verzeichnisnamen ihres Home-Directorys ausgeben
+
+find /home -type d -maxdepth 1
+
+h. suchen Sie alle Dateien von /var/log aus, deren Namen mit einem großen oder kleinen C beginnt, keine Fehlerausgabe
+
+
+find /var/log -name [cC]* -print 2>/def/null
+find /var/log -iname c* -print 2>/def/null
+
+
+i. löschen Sie alle Dateien aus dem Übungsverzeichnis, deren Endung auf .txt lautet
+
+find /Dokumente/dump/ -name *.txt -exec rm {}\;
+
+find a[r,n]
+find . -size +1k
+
+find . -iname "a[n,r]*"
+
+find . -iname "*pdf"
+
+find . -mtime +n
+
+find /bin /usr -iname "*pdf"
+
+find /home -size +1000k
+
+find /home -type d
+
+find -name *xy* -exec rm -r "
+
+find . -name "SUCH-KRITERIUM" -exec rm  {} \;
