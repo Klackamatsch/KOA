@@ -1,0 +1,28 @@
+#!/bin/bash
+
+Shebang-Zeile am Anfang der Datei mit der Pfadangabedes Interpreters
+
+echo
+	echo "Hanswurst"
+	#erzeugt eine Konsolenausgabe
+	
+Die Datei ausführbar machen:
+	chmod +x DATEINAME 
+
+Aufruf der Datei
+	./test.Shebang-Zeile
+	#Es ist eine absolute Pfadangabe notwendig
+
+Variaben
+	Definition:
+		var="variableninhalt"  # letter,numer, underscore(unterstrich) sind möglich
+		case-sensitiv
+	Aufruf der Variable:
+		 echo $var
+		 	Beim aufrufen muss ein Dollarzeichen vorangestellt werden
+				#	wichtig beim variablen deklarieren ist dass vor und hinter dem GLEICHEITSZEICHEN 
+					#keine leerzeichen stehen
+
+					var="hallo"			<----- gut
+					var = "hallo"  <----- schlecht
+
