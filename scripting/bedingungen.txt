@@ -1,0 +1,38 @@
+
+$eingabe="Q"
+
+
+read -p "Geben sie ein P oder Q ein:" eingabe
+if [[ $eingabe = 'P' ]]
+then
+	echo "Gut gemacht"
+elif [[ $eingabe = 'Q' ]]
+then
+echo " Ein Q wie toll!!"
+
+else
+	echo "zu schwierig du depp?"
+fi
+
+Bedingungen:
+	STRING:
+		[[ $bedingungen ]] # gibt true wenn nicht leer
+		[[ $bedingungen  = "wert" ]] #gibt true wenn übereinstimmung
+
+ARITMETISCH
+
+if [[ $eingabe -eq 60 ]] # prüft auf gleicheit
+elif [[ $eingabe -gt 40 ]] # prüft ob größer als
+elif [[ $eingabe -lt 20 ]]  # prüft ob kleiner als'
+
+DATEI:
+
+ead -p "Geben sie einen Dateinamen ein:" eingabe
+if [[ -e $eingabe  ]]                         <--------- gibt es die DATEI?
+then
+echo "Datei: ${eingabe} gefunden"						<---- wenn true dann echo
+else
+	echo " Datei: ${eingabe} NICHT  gefunden .... wird jetzt erstellt"  <---- wenn nicht 																																						dann wird die erstellt
+	touch $eingabe
+	ls -l
+fi
