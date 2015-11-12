@@ -26,3 +26,5 @@ Variaben
 					var="hallo"			<----- gut
 					var = "hallo"  <----- schlecht
 
+echo "scriptname ${0}, parameter ${1},  2.parameter ${2}"
+

@@ -1,0 +1,10 @@
+info über die hardware des systems
+
+lscpu
+less /proc/cpuinfo
+lspci
+
+
+Speicher:
+	free -m
+
