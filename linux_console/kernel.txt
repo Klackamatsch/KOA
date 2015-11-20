@@ -1,0 +1,152 @@
+uname -r
+gibt die version des kernels aus
+*******************************************************************************************
+
+lsb_release -a
+
+gibt aus:
+ob lsb module verfügbar sind
+distribution ID
+distribution
+release
+codename
+*******************************************************************************************
+es gibt zwei arten von terminals
+das richtige terminal vom betriebssystem 
+(öffnet sich mit strg alt f1)
+
+dann die pseudoterminals:
+das sind die installierten programme wie terminator
+*******************************************************************************************
+im    /dev    /sys     /prog  
+
+liegen alle systemdaten in form von txt.
+z.b terminals
+cdlaufwerke
+konfigurationen
+zustände
+*******************************************************************************************
+Befehl: top
+es wird die Prozessverwaltung angezeigt
+*******************************************************************************************
+PID = prozessID
+die benötigt man um prozesse zu killen.
+ (kill -9 [PID])
+
+*******************************************************************************************
+ less /proc/meminfo
+zeigt infos über den memory
+*******************************************************************************************
+free -m 
+gibt überblick über gesamtsystemspeicher 
+*******************************************************************************************
+
+ls /var/log
+hier stehen die logdateien
+nach bestimmten zeitraum werden logdateien gezippt
+im syslog steht nahezu alles was im system passiert
+tail -n100 /var/log/syslog
+
+zeigt den systemlog ein 
+100 gibt an wie viele zeilen angegeben werden sollen
+
+
+*******************************************************************************************
+tail -f /var/log/syslog
+live mitschnitt der log datei
+beenden mit strg c
+
+
+*******************************************************************************************
+tail -f /var/log/boot.log
+less /var/log/boot.log
+
+protokoll des startvorgangs
+
+dmesg | grep cups(cups ist der druckerdienst)
+gibt infos über den druckerdienst beim start
+
+
+
+*******************************************************************************************
+
+sudo init 0
+fährt den pc runter
+*******************************************************************************************
+sudo service ssh status
+ausgabe:
+ssh: unecognized service
+*******************************************************************************************
+/etc/apt/sources.list
+ist wichtig um pakete einzubinden zeigt alle dateipackete an die da sind
+*******************************************************************************************
+hinzufügen einer neuen Quelle
+sudo apt-get update 
+sudo apt-get upgrade
+sudo apt-get install
+sudo add-apt-repository ppa:webupdt8team/sublime-text-2 --> fügt sublime 2 zur liste hinzu
+
+danach mach ich ein update
+danach einen install
+
+erst update dann laden dann installieren?
+erst update dann upgrade  für den kernel ist es dist-upgrade
+
+*******************************************************************************************
+wget 
+
+*******************************************************************************************
+
+dpkg -L vim
+gibt info über pakete die mit vim verbunden sind aber nicht unmittelbar dazugehören
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+BITTE RECHERCHIEREN
+apt-get remove und auto remove
+install update upgrade
+verstehen aufschreiben und lernen!
+
+*******************************************************************************************
+*******************************************************************************************
+*******************************************************************************************
+
+dpkg-reconfigure
+das nitm man um sprachdaten zu ändenr zeit einstellungen zu ändern
+
+dpkg-reconfigure keyboard-configuration
+*******************************************************************************************
+
+ sudo lsblk
+gibt infos über die festplatte wo was ist.
+die festplatten, wie groß was ist wo partitionen etc
+
+*******************************************************************************************
+sudo fdisk
+ist da sprog um partitionen zu erstellen
+mit -l zeigt er nurinfos über die partitionen
+
+**************************************************************************************
+df -h
+gibt übersicht über größe und auslastung 
+*******************************************************************************************
+du -hs /home/pan/*
+zeigt einzelne verzeichnise mit entsprechender Größe
+
+*******************************************************************************************
+dd if=/home/pan of=/irgendeinort
+
+kopiert alles von a nach b
+zum beispiel das gesamte system auf usb oder HDD oder sonst w hin
+(sehr mächtig)
+*******************************************************************************************
+jobs
+zeigt zeigt obs grade aktive befehle auf der console gibt
+*******************************************************************************************
+in top gehen und nach prozessID (PID) suchen
+ps aux ueigt aktuelle tasks an
+ps aux | grep sublime
+kill -9 PID 
+killt den prozess
+
+
