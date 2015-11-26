@@ -1,0 +1,31 @@
+ifconfig
+	#anzeigen der Netzwerkkonfiguration
+
+sudo ifconfig eth0 172.16.161.111 netmask 255.255.0.0
+	#weist eth0 eine neue Adresse zu
+
+sudo route add default gateway 172.16.1.253
+	#weist dem system eine neue Gateway zu 
+
+sudo nameserver 172.16.161.111
+	# einen zusätzlichen nameserver anmelden
+
+sudo hostname neuer_name
+	#weist dem System einen neuen Namen hinzu
+
+ping heise.de
+	#dient zur kontrolle der konnektivität und der Namensauflösung.
+
+sudo ifup eth0
+	#fährt die Netzwerkkarte hoch
+sucdo ifdown eth0
+	+fährt die Netzwerkkarte runter
+
+sudo /etc/init.d/networking restart
+sudo service networking restart
+	#starte  den Netzwerkdienst mit allen NetzwerkKarten neu
+
+
+
+
+

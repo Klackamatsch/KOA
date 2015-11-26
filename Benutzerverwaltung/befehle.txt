@@ -1,0 +1,20 @@
+passwd <username>
+	ändert das passwort oder setzt eines
+
+useradd <username> -m 
+	legt einen neuen Benutzer an, mit seinem Homeverzeichnis
+
+groupadd <groupname>
+	legt eine Gruppe an
+
+FRONTEND:
+	adduser
+		#führt durch einen Wizard zum anlegen eines Users
+
+userdel <username>
+	user wird gelöscht
+
+usermod <username>
+	Änderungen für einen Account 
+
+
