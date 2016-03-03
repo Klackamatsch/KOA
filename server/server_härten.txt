@@ -1,0 +1,34 @@
+SSH Konfigurieren
+
+	Die Konfigurationsdatei anfassen
+
+	sudo vim /etc/ssh/sshd_config
+		-den Prt ändern auf eine zahl über 1024
+			#standardport  22 in eine Nummer größer 1024 und kleiner als 65535
+		-MaxAuthTries 3  #nicht prüfungsrelevant
+		# dann muss man ssh -p 5050 theo@172.16.161.31
+					eingeben also mit -p und dem in der config geändertem port
+
+
+		- permitRootLogin no
+		# der root user kann sich nicht über ssh einloggen
+		#nach änderungen an der Konfigurationsdatei:
+		-sudo service ssh restart
+
+SSH-Login nur möglich über Rechner
+	Schlüssel auf client (DesktopRechner)
+	ssh-keygen -t rsa -C "theo@gmx.de"
+
+	ssh-copy-id -i ~/.ssh/id_rsa.pub theo@172.16.161.31
+	Konfigurationsdatei sshd_config:
+	PasswordAuthentication no
+	RSAAuthentication yes
+	PubkeyAuthentication yes
+
+Sicherheitslücken kontrollieren:
+Es darf keinen User geben der sich einloggen darf (/etc/passwd -dort letzter eintrag pro zeile), und in der
+/etc/shadow   zwischen den ersten beiden Doppelpunkten entweder nichts oder ein ! oder ein * stehen hat.
+	#hier darf es keine Einträge ohne Passwort geben
+
+
+	wenn in der shadow kein PW steht kann man in der PASSWD nachprüfen ob dort festgelegt wurde ob sich die jeweiligen überhaupt einloggen dürfen. steht dort nicht"nologin" muss in der shadow geprüft werden ob dort ein passwort steht.
